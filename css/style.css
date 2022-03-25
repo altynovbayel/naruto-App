@@ -1,0 +1,52 @@
+.body{
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.sitebar{
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -30%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .5s;
+  box-shadow: 0 0 20px white;
+}
+.sitebar.active{
+  right: 0;
+}
+.sitebar_img{
+  width: 300px;
+  margin-bottom: 100px;
+}
+.addCard{
+  margin-bottom: 50px;
+}
+.setInput{
+  width: 150px;
+}
+.sitebar_btn{
+  position: absolute;
+  top: 1rem;
+  left: -180px;
+  width: 60px;
+  cursor: pointer;
+  transition: .5s;
+}
+.sitebar_btn.active{
+  left: -100px;
+  transform: rotate(360deg);
+}
+.arrow {
+  position: absolute;
+  width: 100px;
+  cursor: pointer;
+  top: 1rem;
+  left: 1rem;
+}
