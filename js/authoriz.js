@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     localStorage.setItem('auth', false)
   }else{
     if(localStorage.getItem('auth') === 'true'){
-      window.open('./index.html', '_self')
+      window.open('./home.html', '_self')
     }
   }
 })

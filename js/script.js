@@ -135,7 +135,7 @@ const $clean = document.querySelector('.cleanStorage')
 
 window.addEventListener('load', () => {
   if (localStorage.getItem('auth') === 'false') {
-    window.open('./authoriz.html', '_self')
+    window.open('./index.html', '_self')
   }
 })
 
@@ -172,7 +172,7 @@ window.addEventListener('load', () => {
 $logout.addEventListener('click', e => {
   e.preventDefault()
   localStorage.setItem('auth', false)
-  window.open('./authoriz.html', '_self')
+  window.open('./index.html', '_self')
 })
 
 window.addEventListener('load', cardTemplate(JSON.parse(localStorage.getItem('ninjas'))))
