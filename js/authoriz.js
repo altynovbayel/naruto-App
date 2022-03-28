@@ -2,6 +2,7 @@ const $email = document.querySelector('.email')
 const $pass = document.querySelector('.pass')
 const $btn = document.querySelector('.btn')
 const $alert = document.querySelector('.er')
+
 window.addEventListener('load', () => {
   if(!localStorage.getItem('auth')){
     localStorage.setItem('auth', false)

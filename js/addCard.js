@@ -39,7 +39,6 @@ $arrow.addEventListener('click', () => {
 $btn.addEventListener('click', e => {
   e.preventDefault()
   const newPers = {
-    id: 1,
     name: $name.value,
     power: $power.value,
     village: $village.value,

@@ -10,7 +10,7 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  right: -30%;
+  right: -100%;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -29,18 +29,18 @@
   margin-bottom: 50px;
 }
 .setInput{
-  width: 150px;
+  width: 150px; 
 }
 .sitebar_btn{
-  position: absolute;
+  position: fixed;
   top: 1rem;
-  left: -180px;
+  right: 1rem;
   width: 60px;
   cursor: pointer;
   transition: .5s;
 }
 .sitebar_btn.active{
-  left: -100px;
+  right: 300px;
   transform: rotate(360deg);
 }
 .arrow {
@@ -49,4 +49,8 @@
   cursor: pointer;
   top: 1rem;
   left: 1rem;
+  z-index: 5;
+}
+.title{
+  filter: invert();
 }

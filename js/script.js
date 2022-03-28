@@ -151,7 +151,6 @@ window.addEventListener('load', () => {
     } else {
       $body.setAttribute('style', `background-color: ${backColor}`)
     }
-
   }
 })
 
@@ -294,8 +293,8 @@ $addBtn.addEventListener('click', e => {
   window.open('./addCard.html', '_self')
 })
 
-$clean.addEventListener('click', e => {
-  e.preventDefault()
-
-  localStorage.clear()
+$clean.addEventListener('click', () => {
+  localStorage.removeItem('backColor')
+  localStorage.removeItem('backImage')
+  location.reload()
 })  
